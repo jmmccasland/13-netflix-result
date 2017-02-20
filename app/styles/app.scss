@@ -45,6 +45,31 @@ $c-royalblue: #5576df;
     }
   } // end search bar
 
+  &__results {
+    padding: 2rem;
+  } // __results
+
+} // .card
 
 
-}
+
+// Card results
+.results__top {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &--info-title {
+    margin-top: 0;
+  }
+
+  &--info-rating {
+    font-size: 1.35rem;
+
+    > * + * {
+      padding-left: 0.5rem;
+    }
+  } // --info-rating
+} // __top
