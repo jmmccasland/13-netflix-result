@@ -8,9 +8,14 @@ const searchBtn = document.querySelector('.card__search-btn');
 const searchResult = document.querySelector('.card__results');
 
 
-fetch(`http://netflixroulette.net/api/api.php?title=Attack%20on%20titan`)
-  .then((res) => {
-    return res.json();
-  }).then((data) => {
-    fillInResult(searchResult, data);
-  });
+  fetch(`http://netflixroulette.net/api/api.php?title=Attack%20on%20titan`)
+    .then((res) => {
+      return res.json();
+    }).then((data) => {
+      fillInResult(searchResult, data);
+    });
+
+//
+// searchBtn.addEventListener('click', () => {
+//   searchForTitle(searchInput.value);
+// });
