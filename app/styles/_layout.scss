@@ -1,0 +1,23 @@
+// LAYOUT STYLES
+
+.section {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+
+// CLASS SPECIFIC LAYOUT STYLES - not 100% necessary for the current project, but crucial if expanded upon
+.main-section {
+  background: $c-black;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1rem - 1rem);
+}
