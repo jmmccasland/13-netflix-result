@@ -1,0 +1,30 @@
+
+// Card results
+.results__top {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &--img {
+    width: calc(60% - 1rem);
+    min-width: 20rem;
+  }
+
+  &--info {
+    margin-right: 2rem;
+  }
+
+  &--info-title {
+    margin-top: 0;
+  }
+
+  &--info-rating {
+    font-size: 1.35rem;
+
+    > * + * {
+      padding-left: 0.5rem;
+    }
+  } // --info-rating
+} // __top

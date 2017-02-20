@@ -1,5 +1,5 @@
 import 'whatwg-fetch';
-import fillInResult from 'fill-in-result';
+import fillInResult from './fill-in-result';
 
 
 // Search Variables
@@ -12,5 +12,5 @@ fetch(`http://netflixroulette.net/api/api.php?title=Attack%20on%20titan`)
   .then((res) => {
     return res.json();
   }).then((data) => {
-    fillInResult(element, data);
+    fillInResult(searchResult, data);
   });
